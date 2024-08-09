@@ -16,6 +16,16 @@ import Soru2Screen from '../screens/Soru2Screen';
 import AnaSayfaScreen from '../screens/AnaSayfaScreen';
 import SelfTerapScreen from '../screens/SelfTerapScreen';
 import ArkadaslikIlisScreen from '../screens/ArkadaslikIlisScreen';
+import PodcastScreen from '../screens/PodcastScreen';
+import PlatonikAskScreen from '../screens/PlatonikAskScreen';
+import GuncelYazilarScreen from '../screens/GuncelYazilarScreen';
+import ArkilşDuyEtkisiScreen from '../screens/ArkilşDuyEtkisiScreen';
+import EgzersizlerScreen from '../screens/EgzersizlerScreen';
+import NefesEgzersiziScreen from '../screens/NefesEgzersiziScreen';
+import ProfilScreen from '../screens/ProfilScreen';
+
+
+
 
 
 
@@ -59,6 +69,13 @@ export default function AppNavigation() {
           <Stack.Screen name="AnaSayfa" options={{headerShown: false}} component={AnaSayfaScreen} />
           <Stack.Screen name="SelfTerapiler" options={{headerShown: false}} component={SelfTerapScreen} />
           <Stack.Screen name="ArkadaslikIliskileri" options={{headerShown: false}} component={ArkadaslikIlisScreen} />
+          <Stack.Screen name="Podcast" options={{headerShown: false}} component={PodcastScreen} />
+          <Stack.Screen name="PlatonikAsk" options={{headerShown: false}} component={PlatonikAskScreen} />
+          <Stack.Screen name="GuncelYazilar" options={{headerShown: false}} component={GuncelYazilarScreen} />
+          <Stack.Screen name="ArkilşDuyEtkisi" options={{headerShown: false}} component={ArkilşDuyEtkisiScreen} />
+          <Stack.Screen name="Egzersizler" options={{headerShown: false}} component={EgzersizlerScreen} />
+          <Stack.Screen name="NefesEgzersizi" options={{headerShown: false}} component={NefesEgzersiziScreen} />
+          <Stack.Screen name="Profil" options={{headerShown: false}} component={ProfilScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     )

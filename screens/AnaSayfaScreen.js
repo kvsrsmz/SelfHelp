@@ -8,7 +8,7 @@ import { useState } from 'react';
 import RadioGroup from 'react-native-radio-buttons-group';
 import { RadioButton } from 'react-native-paper';
 import HeartButton from './HeratButton';
-import HeartButton2 from './HeartButton2';
+import HeartButton3 from './HeartButton3';
 
 
 
@@ -52,15 +52,15 @@ export default function AnaSayfaScreen() {
       </View>
       <ScrollView>{/*YUKARI-AŞAĞI KAYDIRMA BAŞLANGIÇ(TÜM EKRAN)*/}
   {/*SELF TERAPİLER*/}
-      <View className="flex-row">
+      <View className="flex-row" >
         <Text style={{marginTop:50,marginHorizontal:25,fontSize:17}}>Self Terapiler</Text>
           <TouchableOpacity onPress={()=> navigation.navigate('SelfTerapiler')}>
             <Text style={{marginTop:50,marginHorizontal:178,textDecorationLine: 'underline',fontSize:12,}}>Tümü</Text>
           </TouchableOpacity> 
       </View>
       <ScrollView horizontal={true} style={styles.scrollView}>{/*SAĞA-SOLA KAYDIRMA BAŞLANGIÇ(SELF TERAPİLER) */}
-        <View className="flex-row" style={{marginTop:-90}} >
-        <TouchableOpacity onPress={()=> navigation.navigate('AnaSayfa')}>
+        <View className="flex-row" style={{marginTop:-90,marginBottom:10}} >
+        <TouchableOpacity onPress={()=> navigation.navigate('ArkadaslikIliskileri')}>
           <View style={styles.imageGolge}>
             <Image source={require('../assets/images/arkadaslik.jpg')} 
               style={{width:140,height:180,marginHorizontal:9,marginTop:6,
@@ -70,33 +70,33 @@ export default function AnaSayfaScreen() {
                 </View>
           </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={()=> navigation.navigate('AnaSayfa')}>
+          <TouchableOpacity onPress={()=> navigation.navigate('ArkadaslikIliskileri')}>
           <View style={styles.imageGolge}>
             <Image source={require('../assets/images/arkadaslik.jpg')} 
               style={{width:140,height:180,marginHorizontal:9,marginTop:6,
               borderTopLeftRadius: 20, borderTopRightRadius: 20,borderBottomLeftRadius:20,borderBottomRightRadius:20,}}/>
                 <View style={styles.textBox}>
-                  <Text style={{fontSize:12,justifyContent:"center"}}>Arkadaşlık İlişkileri</Text>
+                  <Text style={{fontSize:12,justifyContent:"center"}}>Aile İlişkileri</Text>
                 </View>
           </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={()=> navigation.navigate('AnaSayfa')}>
+          <TouchableOpacity onPress={()=> navigation.navigate('ArkadaslikIliskileri')}>
           <View style={styles.imageGolge}>
             <Image source={require('../assets/images/arkadaslik.jpg')} 
               style={{width:140,height:180,marginHorizontal:9,marginTop:6,
               borderTopLeftRadius: 20, borderTopRightRadius: 20,borderBottomLeftRadius:20,borderBottomRightRadius:20,}}/>
                 <View style={styles.textBox}>
-                  <Text style={{fontSize:12,justifyContent:"center"}}>Arkadaşlık İlişkileri</Text>
+                  <Text style={{fontSize:12,justifyContent:"center"}}>Romantik İlişkileri</Text>
                 </View>
           </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={()=> navigation.navigate('AnaSayfa')}>
+          <TouchableOpacity onPress={()=> navigation.navigate('ArkadaslikIliskileri')}>
           <View style={styles.imageGolge}>
             <Image source={require('../assets/images/arkadaslik.jpg')} 
               style={{width:140,height:180,marginHorizontal:9,marginTop:6,
               borderTopLeftRadius: 20, borderTopRightRadius: 20,borderBottomLeftRadius:20,borderBottomRightRadius:20,}}/>
                 <View style={styles.textBox}>
-                  <Text style={{fontSize:12,justifyContent:"center"}}>Arkadaşlık İlişkileri</Text>
+                  <Text style={{fontSize:12,justifyContent:"center"}}>Mesleki İlişkileri</Text>
                 </View>
           </View>
           </TouchableOpacity>
@@ -105,12 +105,12 @@ export default function AnaSayfaScreen() {
   {/*EGZERSİZLER*/}    
       <View className="flex-row" style={{marginTop:-40}}>
         <Text style={{marginTop:50,marginHorizontal:25,fontSize:17}}>Egzersizler</Text>
-          <TouchableOpacity onPress={()=> navigation.navigate('AnaSayfa')}>
+          <TouchableOpacity onPress={()=> navigation.navigate('Egzersizler')}>
             <Text style={{marginTop:60,marginHorizontal:178,textDecorationLine: 'underline',fontSize:12,}}>Tümü</Text>
           </TouchableOpacity> 
       </View>
       <ScrollView horizontal={true}>{/*SAĞA-SOLA KAYDIRMA BAŞLANGIÇ(EĞZERSİZLER)*/}
-        <View className="flex-row" style={{marginTop:-90}} >
+        <View className="flex-row" style={{marginTop:-90,marginBottom:10}} >
         <TouchableOpacity onPress={()=> navigation.navigate('AnaSayfa')}>
           <View style={styles.imageGolge}>
             <Image source={require('../assets/images/egzersiz.jpg')} 
@@ -160,11 +160,11 @@ export default function AnaSayfaScreen() {
       {/*PODCASTLAR*/}    
       <View className="flex-row" style={{marginTop:-30}}>
         <Text style={{marginTop:50,marginHorizontal:25,fontSize:17}}>Podcastlar</Text>
-          <TouchableOpacity onPress={()=> navigation.navigate('AnaSayfa')}>
+          <TouchableOpacity onPress={()=> navigation.navigate('Podcast')}>
             <Text style={{marginTop:60,marginHorizontal:178,textDecorationLine: 'underline',fontSize:12,}}>Tümü</Text>
           </TouchableOpacity> 
       </View>
-      <TouchableOpacity onPress={()=> navigation.navigate('AnaSayfa')}>
+      <TouchableOpacity onPress={()=> navigation.navigate('PlatonikAsk')}>
             <View style={{
               marginHorizontal:24,
               marginTop:10,
@@ -173,11 +173,11 @@ export default function AnaSayfaScreen() {
               flexDirection: 'row',
               height:40,
               backgroundColor:"#c4c4c4"}}>
-               <Text style={{fontSize:16,marginTop:9,marginHorizontal:25}}>Lorem ipsum </Text>
+               <Text style={{fontSize:16,marginTop:9,marginHorizontal:25}}>Platonik Aşk </Text>
                <HeartButton />
             </View>
             </TouchableOpacity>
-            <TouchableOpacity onPress={()=> navigation.navigate('AnaSayfa')}>
+            <TouchableOpacity onPress={()=> navigation.navigate('PlatonikAsk')}>
             <View style={{
               marginHorizontal:24,
               marginTop:10,
@@ -190,7 +190,7 @@ export default function AnaSayfaScreen() {
                 <HeartButton />
             </View>
             </TouchableOpacity>
-            <TouchableOpacity onPress={()=> navigation.navigate('AnaSayfa')}>
+            <TouchableOpacity onPress={()=> navigation.navigate('PlatonikAsk')}>
             <View style={{
               marginHorizontal:24,
               marginTop:10,
@@ -208,23 +208,24 @@ export default function AnaSayfaScreen() {
       {/*GÜNCEL YAZILAR*/}  
             <View className="flex-row" style={{marginTop:-110}}>
         <Text style={{marginTop:50,marginHorizontal:25,fontSize:17}}>Güncel Yazılar</Text>
-          <TouchableOpacity onPress={()=> navigation.navigate('AnaSayfa')}>
+          <TouchableOpacity onPress={()=> navigation.navigate('GuncelYazilar')}>
             <Text style={{marginTop:60,marginHorizontal:178,textDecorationLine: 'underline',fontSize:12,}}>Tümü</Text>
           </TouchableOpacity> 
       </View>
       <ScrollView horizontal={true}>{/*SAĞA-SOLA KAYDIRMA BAŞLANGIÇ(GÜNCEL YAZILAR)*/}
         <View className="flex-row" style={{marginTop:-90,marginBottom:100}} >
-        <TouchableOpacity onPress={()=> navigation.navigate('AnaSayfa')}>
+        <TouchableOpacity onPress={()=> navigation.navigate('ArkilşDuyEtkisi')}>
           <View style={styles.imageGolge2}>
             <Image source={require('../assets/images/güncelYazilar.jpg')} 
               style={{width:210,height:180,marginHorizontal:9,marginTop:6,
               borderTopLeftRadius: 20, borderTopRightRadius: 20,borderBottomLeftRadius:20,borderBottomRightRadius:20,}}/>
                 <View style={styles.textBox2}>
+          
                   <Text style={{fontSize:12,justifyContent:"center",color:"white",marginHorizontal:10}}>Arkadaşlık İlişkilerinin Duygular Üzerindeki Etkisi</Text>
                 </View>     
           </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={()=> navigation.navigate('AnaSayfa')}>
+          <TouchableOpacity onPress={()=> navigation.navigate('ArkilşDuyEtkisi')}>
           <View style={styles.imageGolge2}>
             <Image source={require('../assets/images/güncelYazilar.jpg')} 
               style={{width:210,height:180,marginHorizontal:9,marginTop:6,
@@ -274,7 +275,7 @@ export default function AnaSayfaScreen() {
                 </View>
               </TouchableOpacity>
               {/*PROFİLİM*/}
-              <TouchableOpacity onPress={()=> navigation.navigate('AnaSayfa')}>
+              <TouchableOpacity onPress={()=> navigation.navigate('Profil')}>
                 <View style={{marginRight:-13}}>
                   <Image source={require('../assets/icons/user.png')} style={{width:30,height:30,marginHorizontal:20}}/>
                   <Text style={{color:"white",marginHorizontal:10}}>Profilim </Text>
